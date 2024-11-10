@@ -16,9 +16,9 @@ def main():
             players.append(player)
 
     print("""Players from FIN\n""")
-
-    for player in players:
-        print(player)
+    
+    for player in sorted(players, key=lambda player: player.points, reverse=True):
+        print(f"{player.name:20}{player.team:6}{player.points}")
 
 if __name__ == "__main__":
     main()

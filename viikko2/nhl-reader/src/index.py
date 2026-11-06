@@ -1,9 +1,13 @@
-from rich import print
+"""Run the NHL player statistics reader."""
+
+from rich import print as rich_print
 from rich.table import Table
 from playerreader import PlayerReader
 from playerstats import PlayerStats
 
+
 def main():
+    """Prompt for a season and nationality, then display matching scorers."""
     season = input("Season between 2018-2026 in format 2024-25: ")
     if season == "":
         season = "2024-25"
@@ -32,7 +36,7 @@ def main():
             str(player.points),
         )
 
-    print(table)
+    rich_print(table)
 
 if __name__ == "__main__":
     main()

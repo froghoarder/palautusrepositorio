@@ -17,3 +17,17 @@ class PlayerStats:
                 top_scorers.append(pl)
 
         return sorted(top_scorers, key=lambda x: -x.points)
+
+    def top_scorers_by_team(self, team):
+        """Return players of the given team ordered by points."""
+        top_scorers = []
+        for pl in self.reader.players:
+            if pl.team == team:
+                top_scorers.append(pl)
+
+        return sorted(top_scorers, key=lambda x: -x.points)
+
+    def top_goal_scorers(self, how_many):
+        """Palauttaa how_many eniten maaleja tehnyttä pelaajaa 
+            maalimäärän mukaan laskevassa järjestyksessä"""
+        return sorted(self.reader.players, key=lambda x: -x.goals)[:how_many]

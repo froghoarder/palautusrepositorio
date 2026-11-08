@@ -8,6 +8,7 @@ class Player:
     # pylint: disable=too-few-public-methods
     def __init__(self, player_data):
         self.name = player_data['name']
+        self.team = player_data['team']
         self.nationality = player_data['nationality']
         self.assists = player_data['assists']
         self.goals = player_data['goals']

@@ -1,0 +1,5 @@
+- koodin täydennyksen ehdotus oli toimiva, käytännössä lyhyen koodipätkän tarkistamiseen meni yhtä pitkään kun jos olisi kirjoittanut sen itse
+- selitys piti paikkansa
+- agentti teki toimivan ratkaisun ja testit
+- ei varsinaisesti
+- ei

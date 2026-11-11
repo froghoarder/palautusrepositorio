@@ -1,3 +1,5 @@
 # palautusrepositorio
 
-Tehtävät 2-13: https://github.com/froghoarder/ohtuvarasto
+Viikko 1 tehtävät 2-13: https://github.com/froghoarder/ohtuvarasto  
+
+webcounter: https://github.com/froghoarder/webcounter
